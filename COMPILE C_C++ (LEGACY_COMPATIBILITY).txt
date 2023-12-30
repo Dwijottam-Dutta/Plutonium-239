@@ -1,0 +1,37 @@
+----------------------------
+C program MinGW-Compiler
+----------------------------
+
+> Create a .rc file
+
+> Write in .rc file
+  id ICON "path/to/my.ico"
+
+> Write in terminal
+  windres my.rc -O coff -o my.res
+
+> Write in terminal
+  gcc -static-libgcc -static-libstdc++ $PROGRAM_FILE.c my.res
+
+
+----------------------------
+C++ program MinGW-Compiler
+----------------------------
+
+> Create a .rc file
+
+> Write in .rc file
+  id ICON "path/to/my.ico"
+
+> Write in terminal
+  windres my.rc -O coff -o my.res
+
+> Write in terminal
+  g++ -static-libgcc -static-libstdc++ $PROGRAM_FILE.cpp my.res
+
+
+----------------------------
+SOURCE LINK
+----------------------------
+https://stackoverflow.com/questions/708238/how-do-i-add-an-icon-to-a-mingw-gcc-compiled-executable
+https://stackoverflow.com/questions/4702732/the-program-cant-start-because-libgcc-s-dw2-1-dll-is-missing
